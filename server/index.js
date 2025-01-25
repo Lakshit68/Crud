@@ -122,7 +122,7 @@ app.post('/create', authenticateToken, authorize(['admin']), async (req, res) =>
   }
 });
 
-app.get('/all', authenticateToken, async (req, res) => {
+app.get('/', authenticateToken, async (req, res) => {
   try {
     const entries = await Entry.find();
     res.json(entries);
