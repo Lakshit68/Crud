@@ -133,7 +133,7 @@ app.get('/all', authenticateToken, async (req, res) => {
 });
 app.get('/',async(req,res) =>{
   res.render("Backend is working.Check it through postman.")
-}
+});
 
 app.get('/byId/:id', authenticateToken, async (req, res) => {
   try {
